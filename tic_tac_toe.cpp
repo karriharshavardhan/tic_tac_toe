@@ -3,10 +3,10 @@ using namespace std;
 
 void main1();
 char choice();
-void display_board();
-void filling(vector<char> &board, int count);
+void display_board(vector<char> board);
+void filling(vector<char> &board, int count, char player1, char player2);
 bool decide(vector<char> board);
-bool occupied();
+bool occupied(vector<char> board);
 bool check_vacancy(vector<char> board, int i);
 bool check_row(vector<char> board);
 bool check_column(vector<char> board);
