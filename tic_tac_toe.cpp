@@ -47,6 +47,7 @@ char choice()
         cout << "invalid!\n";
         player1 = choice();
     }
+    return ' ';
 }
 
 void display_board(vector<char> board)
@@ -168,7 +169,7 @@ bool check_diagonal(vector<char> board)
 
 void rematch()
 {
-    cout << "do you wish to play the game again??(Y/N): ";
+    cout << "do you wish to play the game again?(Y/N): ";
     char c;
     cin >> c;
     if (c == 'Y' || c == 'y')
